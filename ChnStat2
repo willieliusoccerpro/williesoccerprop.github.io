@@ -1,0 +1,285 @@
+<HTML>
+<HEAD>
+<STYLE>
+
+#topmenu{
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  left: -10%;
+  height: 50px;
+  width: 110%;
+  z-index: 0;
+}
+
+#english{
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  border: none;
+  height: 0px;
+  left: 400px;
+  z-index: 1;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  top: 0px;
+  left: 900px;
+  height: 50px;
+  border: none;
+}
+
+.dropdown {
+  position: fixed;
+  top: 0px;
+  left: 900px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:hotpink; color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: gray;}
+/*Stats Dropdown Code*/
+.dropbtn1 {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  top: 0px;
+  left: 1000px;
+  height: 50px;
+  border: none;
+}
+
+.dropdown1 {
+  position: fixed;
+  top: 0px;
+  left: 1000px;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content1 a:hover {background-color:hotpink; color: black;}
+
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+.dropdown1:hover .dropbtn1 {background-color: gray;}
+/*Highlights Dropdown Code*/
+.dropbtn2 {
+  background-color: #000000;
+  position: fixed;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  top: 0px;
+  left: 1150px;
+  height: 50px;
+  border: none;
+}
+
+.dropdown2 {
+  position: fixed;
+  top: 50px;
+  left: 1150px;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color:hotpink; color: black;}
+
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+.dropdown2:hover .dropbtn2 {background-color: gray;}
+/*More Menu Dropdown Code*/
+
+#pictures{
+position: absolute;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+header {  
+/* This section calls the slideInFromLeft animation we defined above */
+animation: 3s ease-out 0s 1 slideInFromLeft;
+} 
+
+#captions{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  background-color: pink;
+  z-index: 3;
+  transition: opacity 0.3s ease-in-out; 
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "impact";
+  line-height: 90px;
+
+}
+
+#captions:hover{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0.6;
+  background-color: pink;
+  z-index: 3;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: "impact";
+
+
+}
+
+
+
+
+</STYLE>
+</HEAD>
+<BODY>
+
+<SCRIPT>
+
+</SCRIPT>
+
+<IMG src = "soccer/websitebackground.png" style = "z-index: -100; position: fixed; width: 110%; height: 110%; top: 50px; left: -20px"></IMG>
+
+<DIV id= 'topmenu' style = "z-index:1;"></DIV>
+
+<DIV id= 'english' style = "z-index: 2;"><a href="index.html#">英文</a></DIV>
+<DIV id= 'english' style = 'left: 500px; z-index: 2;'><a href="cindex.html">中文</a></DIV>
+<DIV id= 'english' style = 'left: 600px; z-index: 2;'><a href="sindex.html">西文</a></DIV>
+
+<DIV class="dropdown" style="z-index:2;">
+  <BUTTON class="dropbtn">數據</BUTTON>
+  <DIV class="dropdown-content">
+    <A href="ChnStat1.html">高雄美國學校 #10</A>
+    <A href="ChnStat2.html">閃電飛翔 #17</A>
+  </DIV>
+</DIV>
+
+<DIV class="dropdown1" style="z-index:2;">
+  <BUTTON class="dropbtn1">精彩精華</BUTTON>
+  <DIV class="dropdown-content1">
+    <A href="https://www.instagram.com/stories/highlights/18008630971945415/">23-24 賽季</A>
+    <A href="https://www.instagram.com/stories/highlights/18008630971945415/">22-23 賽季</A>
+    <A href="https://www.instagram.com/stories/highlights/18008630971945415/">21-22 賽季</A>
+    <A href="https://www.instagram.com/stories/highlights/18008630971945415/">20-21 賽季</A>
+  </DIV>
+</DIV>
+
+<DIV class="dropdown2" style="z-index:2;">
+  <BUTTON class="dropbtn2">更多</BUTTON>
+  <DIV class="dropdown-content2">
+    <A href="https://www.instagram.com/l.willie10/">關於</A>
+    <A href="https://www.meiji.com.tw/sports/savas/">贊助商</A>
+    <A href="#">支持</A>
+  </DIV>
+</DIV>
+
+
+<HEADER><DIV id = "pictures" style = "position: absolute; top: 100px; left: 100px;font-family: bradley hand; font-size:100px; color: white; z-index: 0;">閃電飛翔 #17</DIV></HEADER>
+<HEADER><IMG src = "soccer/trans7.png " style = "transform-origin: top left; transform: scale(0.8);position: absolute; top:200px; z-index:0; left: 50px;"></IMG></HEADER>
+
+<IMG src = "soccer/trans8.png " style = "transform-origin: top left; transform: scale(2);position: absolute; top:400px; left: 650px;z-index:0;"></IMG>
+<IMG src = "soccer/hlffc.png " style = "transform-origin: top left; transform: scale(1);position: absolute; top:-100px; left: 200px;z-index:-1; opacity: 0.2"></IMG>
+<HEADER><IMG src = "soccer/trans9.png " style = "transform-origin: top left; transform: scale(1);position: absolute; top:190px; left: 600px;z-index:0;"></IMG></HEADER>
+
+<HEADER><DIV id = "pictures" style = "position: absolute; top: 900px; left: 100px;font-family: arial Black; font-size:60px; color: white; z-index: 0;">賽場</DIV>
+<DIV id = "pictures" style = "position: absolute; top: 900px; left: 480px;font-family: arial Black; font-size:60px; color: skyblue; z-index: 0;">進球</DIV>
+<DIV id = "pictures" style = "position: absolute; top: 900px; left: 800px;font-family: arial Black; font-size:60px; color: red; z-index: 0;">助攻5</DIV></HEADER>
+
+<HEADER><DIV id = "pictures" style = "position: absolute; top: 1100px; left: 170px;font-family: luminari; font-size:100px; color: white; z-index: 0;">15</DIV>
+<DIV id = "pictures" style = "position: absolute; top: 1100px; left: 530px;font-family: luminari; font-size:100px; color: skyblue; z-index: 0;">6</DIV>
+<DIV id = "pictures" style = "position: absolute; top: 1100px; left: 890px;font-family: luminari; font-size:100px; color: red; z-index: 0;">3</DIV></HEADER>
+
+</BODY>
+</HTML>
